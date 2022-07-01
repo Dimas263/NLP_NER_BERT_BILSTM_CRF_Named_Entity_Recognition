@@ -2,11 +2,11 @@
 
 # [Architecture](https://dimas263.github.io/work/data/NER%20Architecture.html)
 
-<img src="Architecture-NER-BERT-BILSTM-CRF.png" width="600">
+<img src="Architecture-NER-BERT-BILSTM-CRF.png">
 
 # Json Dataset
 
-```json
+```yaml
 [
 {
   'id' : ...,
@@ -16,7 +16,7 @@
 ]
 ```
 
-```json
+```yaml
 [
 {'id': 0,
   'labels': [['T0', 'plant', 46, 55, 'digitalis'],
@@ -40,7 +40,7 @@
 ]
 ```
 # Labels
-```json
+```yaml
 BIO = {0: 'O', 1: 'B', 2: 'I'}
 Labels = {'UNK': 0, 'plant': 1, 'disease': 2} {0: 'UNK', 1: 'plant', 2: 'disease'}
 ```
@@ -100,7 +100,7 @@ Labels = {'UNK': 0, 'plant': 1, 'disease': 2} {0: 'UNK', 1: 'plant', 2: 'disease
 
 # Predict
 
-```json
+```yaml
 effects of korean red ginseng extracts on neural tube defects and impairment of social interaction induced by prenatal exposure to valproic
 {'plant': [['ginseng', 22]], 'disease': [['neural', 42], ['tube', 49], ['defects', 54]]}
 ```
