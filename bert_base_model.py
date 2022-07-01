@@ -33,3 +33,4 @@ class BaseModel(nn.Module):
                 elif isinstance(module, nn.LayerNorm):
                     nn.init.ones_(module.weight)
                     nn.init.zeros_(module.bias)
+

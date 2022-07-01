@@ -297,3 +297,4 @@ if __name__ == '__main__':
     raw_text = "effects of korean red ginseng extracts on neural tube defects and impairment of social interaction induced by prenatal exposure to valproic"
     logger.info(raw_text)
     bertForNer.predict(raw_text, model_path)
+

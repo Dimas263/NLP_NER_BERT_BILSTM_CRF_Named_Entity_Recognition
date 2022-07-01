@@ -27,3 +27,4 @@ class NerDataset(Dataset):
         data['bio_labels'] = self.bio_labels[index]
         data['att_labels'] = self.att_labels[index]
         return data
+

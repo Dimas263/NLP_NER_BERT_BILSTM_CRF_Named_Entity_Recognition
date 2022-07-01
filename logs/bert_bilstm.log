@@ -7255,3 +7255,4 @@ avg / total       0.76      0.51      0.61      1765
 2022-06-26 20:35:28,612 - INFO - main.py - <module> - 299 - None
 2022-06-26 20:35:31,044 - INFO - trainUtils.py - load_model_and_parallel - 98 - Load ckpt from ./drive/MyDrive/bert_bilstm_crf_named_entity_recognition/BERT-BILSTM-CRF-NER/output/checkpoints/bert_bilstm/model.pt
 2022-06-26 20:35:31,800 - INFO - trainUtils.py - load_model_and_parallel - 108 - Use single gpu in: ['0']
+

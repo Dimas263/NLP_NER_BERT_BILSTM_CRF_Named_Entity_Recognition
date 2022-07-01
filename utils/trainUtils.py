@@ -108,3 +108,4 @@ def load_model_and_parallel(model, gpu_ids, ckpt_path=None, strict=True):
         logger.info('Use single gpu in: {}'.format(gpu_ids))
 
     return model, device
+

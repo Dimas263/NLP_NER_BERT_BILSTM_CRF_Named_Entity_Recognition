@@ -80,3 +80,4 @@ def classification_report(metrics_matrix, label_list, id2label, total_count, dig
     )
 
     return report
+
