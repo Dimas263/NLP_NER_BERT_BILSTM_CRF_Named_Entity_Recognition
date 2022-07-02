@@ -106,8 +106,8 @@ effects of korean red ginseng extracts on neural tube defects and impairment of 
 ```
 # Model Output
 ```javascript
--rwxrwxrwx 1 dimas dimas 417M Jun 26 12:58 bert_bilstm_crf/model.pt
--rwxrwxrwx 1 dimas dimas 417M Jun 26 13:35 bert_bilstm/model.pt
--rwxrwxrwx 1 dimas dimas 415M Jun 26 14:23 bert_crf/model.pt
--rwxrwxrwx 1 dimas dimas 415M Jun 26 14:54 bert/model.pt
+- 417M Jun 26 12:58 bert_bilstm_crf/model.pt
+- 417M Jun 26 13:35 bert_bilstm/model.pt
+- 415M Jun 26 14:23 bert_crf/model.pt
+- 415M Jun 26 14:54 bert/model.pt
 ```
