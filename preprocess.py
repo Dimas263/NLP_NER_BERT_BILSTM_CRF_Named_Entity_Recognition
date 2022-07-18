@@ -126,7 +126,7 @@ def convert_bert_example(ex_idx, example: InputExample, tokenizer: BertTokenizer
         text=tokens,
         max_length=max_seq_len,
         pad_to_max_length=True,
-        truncation='longest_first',
+        # truncation='longest_first',
         is_pretokenized=True,
         return_token_type_ids=True,
         return_attention_mask=True
@@ -235,7 +235,5 @@ if __name__ == '__main__':
     processor = NerProcessor(cut_sent=True, cut_sent_len=args.max_seq_len)
 
     train_data = get_data(processor, mid_data_path, "train.json", "train", ent2id, labels, args)
-    ## save_file(os.path.join(mid_data_path, "data_{}_cut.txt".format(args.max_seq_len)), train_data, id2ent, id2label)
     dev_data = get_data(processor, mid_data_path, "dev.json", "dev", ent2id, labels, args)
     test_data = get_data(processor, mid_data_path, "test.json", "test", ent2id, labels, args)
-

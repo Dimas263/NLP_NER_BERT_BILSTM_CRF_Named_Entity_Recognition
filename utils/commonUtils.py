@@ -105,4 +105,3 @@ def fine_grade_tokenize(raw_text, tokenizer):
                 tokens.append(_ch)
 
     return tokens
-

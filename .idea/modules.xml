@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/BERT-BILSTM-CRF-NER.iml" filepath="$PROJECT_DIR$/.idea/BERT-BILSTM-CRF-NER.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/NLP_NER_BERT_BILSTM_CRF_Named_Entity_Recognition.iml" filepath="$PROJECT_DIR$/.idea/NLP_NER_BERT_BILSTM_CRF_Named_Entity_Recognition.iml" />
     </modules>
   </component>
 </project>

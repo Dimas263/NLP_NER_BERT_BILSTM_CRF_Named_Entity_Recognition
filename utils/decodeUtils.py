@@ -148,4 +148,3 @@ def bioes_decode(decode_tokens, raw_text, id2ent):
             index_ += 1
 
     return predict_entities
-

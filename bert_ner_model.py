@@ -134,4 +134,3 @@ if __name__ == '__main__':
     model = BertNerModel(args)
     for name, weight in model.named_parameters():
         print(name)
-

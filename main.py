@@ -75,7 +75,7 @@ class BertForNer:
         # Train
         global_step = 0
         self.model.zero_grad()
-        eval_steps = 20
+        eval_steps = 100
         best_f1 = 0.0
         for epoch in range(self.args.train_epochs):
             for step, batch_data in enumerate(self.train_loader):
@@ -98,14 +98,18 @@ class BertForNer:
                 self.model.zero_grad()
                 logger.info('【train】 epoch:{} {}/{} loss:{:.4f}'.format(epoch, global_step, self.t_total, loss.item()))
                 global_step += 1
+
+                if global_step > 2000:
+                  eval_steps = 10
+
                 if global_step % eval_steps == 0:
-                    dev_loss, precision, recall, f1_score = self.dev()
-                    logger.info(
-                        '[eval] loss:{:.4f} precision={:.4f} recall={:.4f} f1_score={:.4f}'.format(dev_loss, precision,
-                                                                                                   recall, f1_score))
-                    if f1_score > best_f1:
-                        trainUtils.save_model(self.args, self.model, model_name, global_step)
-                        best_f1 = f1_score
+                      dev_loss, precision, recall, f1_score = self.dev()
+                      logger.info(
+                          '[eval] loss:{:.4f} precision={:.4f} recall={:.4f} f1_score={:.4f}'.format(dev_loss, precision,
+                                                                                                    recall, f1_score))
+                      if f1_score > best_f1:
+                          trainUtils.save_model(self.args, self.model, model_name, global_step)
+                          best_f1 = f1_score
 
     def dev(self):
         self.model.eval()
@@ -291,10 +295,9 @@ if __name__ == '__main__':
     bertForNer = BertForNer(args, train_loader, dev_loader, test_loader, id2query, id2label)
     bertForNer.train()
 
-    model_path = './drive/MyDrive/bert_bilstm_crf_named_entity_recognition/BERT-BILSTM-CRF-NER/output/checkpoints/{}/model.pt'.format(model_name)
+    model_path = './drive/MyDrive/Rearch_Dimas/BERT-BILSTM-CRF-NER/output/checkpoints/{}/model.pt'.format(model_name)
     bertForNer.test(model_path)
 
-    raw_text = "effects of korean red ginseng extracts on neural tube defects and impairment of social interaction induced by prenatal exposure to valproic"
+    raw_text = "has and hpe were demonstrated to cause cancer cell apoptosis especially in leukemia and gastric cancer"
     logger.info(raw_text)
     bertForNer.predict(raw_text, model_path)
-

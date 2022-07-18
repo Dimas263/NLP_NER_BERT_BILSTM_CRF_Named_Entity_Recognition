@@ -10,14 +10,14 @@ class Args:
     @staticmethod
     def initialize(parser):
         # args for path
-        parser.add_argument('--output_dir', default='./drive/MyDrive/bert_bilstm_crf_named_entity_recognition/BERT-BILSTM-CRF-NER/output/checkpoints',
+        parser.add_argument('--output_dir', default='./drive/MyDrive/Rearch_Dimas/BERT-BILSTM-CRF-NER/output/checkpoints',
                             help='the output dir for model checkpoints')
 
-        parser.add_argument('--bert_dir', default='./drive/MyDrive/bert_bilstm_crf_named_entity_recognition/BERT-BILSTM-CRF-NER/model/biobert',
+        parser.add_argument('--bert_dir', default='./drive/MyDrive/Rearch_Dimas/BERT-BILSTM-CRF-NER/model/biobert',
                             help='bert dir for uer')
-        parser.add_argument('--data_dir', default='./drive/MyDrive/bert_bilstm_crf_named_entity_recognition/BERT-BILSTM-CRF-NER/input/',
+        parser.add_argument('--data_dir', default='./drive/MyDrive/Rearch_Dimas/BERT-BILSTM-CRF-NER/input/',
                             help='data dir for uer')
-        parser.add_argument('--log_dir', default='./drive/MyDrive/bert_bilstm_crf_named_entity_recognition/BERT-BILSTM-CRF-NER/logs/',
+        parser.add_argument('--log_dir', default='./drive/MyDrive/Rearch_Dimas/BERT-BILSTM-CRF-NER/logs/',
                             help='log dir for uer')
 
         # other args
@@ -80,4 +80,3 @@ class Args:
         parser = self.parse()
         parser = self.initialize(parser)
         return parser.parse_args()
-

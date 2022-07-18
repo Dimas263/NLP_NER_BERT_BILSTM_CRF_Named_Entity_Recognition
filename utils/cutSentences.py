@@ -100,4 +100,3 @@ if __name__ == '__main__':
 
             print(sent)
             print(labels)
-
