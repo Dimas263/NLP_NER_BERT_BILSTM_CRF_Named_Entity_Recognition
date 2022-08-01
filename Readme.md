@@ -7,9 +7,9 @@
 ## <img src="https://img.icons8.com/external-fauzidea-flat-fauzidea/64/undefined/external-man-avatar-avatar-fauzidea-flat-fauzidea.png"/> **`Dimas Dwi Putra`**
 
 ## Architecture
-<img src="NER-BERT-BILSTM-CRF%20Architecture.png" width="9645">
+<p align="center"><img src="NER-BERT-BILSTM-CRF%20Architecture.png" width="9645"></p>
 
-## Dataset
+## Dataset<br>[View Dataset .json](input/mid_data/)
 
 B-I-O
 ```yaml
@@ -42,7 +42,7 @@ Example
 ]
 ```
 
-## Eval
+## Eval<br>[View Eval Report .xlsx](summary.xlsx)
 | Fine Tuning   | Biobert-Plant-Disease | Biobert-Plant-Disease | Biobert-Plant-Disease | Biobert-Plant-Disease |
 | ------------- |-----------------------|-----------------------|-----------------------|-----------------------|
 | Model         | Bert                  | Bert-CRF              | Bert-Bilstm           | Bert-Bilstm-CRF       |
@@ -69,7 +69,7 @@ effects of korean red ginseng extracts on neural tube defects and impairment of 
 {'plant': [['ginseng', 22]], 'disease': [['neural', 42], ['tube', 49], ['defects', 54]]}
 ```
 
-## Output
+## Output<br>[View Model Directory](output/)
 ### Save model output as [Pytorch .pt](output/) 
 
 # **Other Content**
@@ -87,7 +87,7 @@ effects of korean red ginseng extracts on neural tube defects and impairment of 
 #### [6. NER BERT BiLSTM CRF Named Entity Recognition](https://github.com/Dimas263/NLP_NER_BERT_BILSTM_CRF_Named_Entity_Recognition)
 
 
-### **Relation Extraction (NER)**
+### **Relation Extraction (RE)**
 #### [1. RE Dataset Biomedical Plant-Disease Corpus](https://github.com/Dimas263/NLP_RE_Dataset_Biomedical_Plant-Disease_Corpus)
 #### [2. RE BERT Relation Extraction Biomedical](https://github.com/Dimas263/NLP_RE_BERT_Relation_Extraction_Biomedical)
 #### [3. RE BiLSTM CRF Relation Extraction Biomedical](https://github.com/Dimas263/NLP_RE_BILSTM_CRF_Relation_Extraction_Biomedical)
